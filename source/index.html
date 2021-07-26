@@ -9,16 +9,16 @@
 
   <header class="page-header">
     <a class="page-header__logo" href="">
-      <img src="logo.svg">
+      <img src="../source/img/htmlacademy.sv" width="101" height="84" alt="logo">
     </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button"></button>
-      <div class="main-navigation__wrapper">
-        <ul class="main-navigation__list">
-          <li><a>главная</a></li>
-          <li><a>фото и видео</a></li>
-          <li><a>форма отзыва</a></li>
-          <li><a>html academy</a></li>
+    <nav class="navigation">
+      <button class="navigation__toggle" type="button"></button>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" href="index.html">главная</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="catalog.html">фото и видео</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="form.html">форма отзыва</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="https://htmlacademy.ru">html academy</a></li>
         </ul>
       </div>
     </nav>
@@ -27,25 +27,28 @@
   <main class="page-main">
 
     <section class="slogan">
-      <h1 class="visually-hidden">Седона - город заслуживающий большего.</h1>
-      <div class="welcome"><img src="" width="115" height="27" alt="welcome"></div>
-      <div class="to_the"><img src="i" width="106" height="17" alt="to the gorgeous"></div>
-      <div class="sedona"><img src="" width="282" height="48" alt="sedona"></div>
+      <h1 class="slogan__visually-hidden">Седона - город заслуживающий большего.</h1>
+      <img src="../source/img/htmlacademy.sv" width="901" height="389" alt="вид на скалы Седоны">
+      <div class="welcome"><img src="../source/img/htmlacademy.sv" width="115" height="27" alt="welcome"></div>
+      <div class="to_the"><img src="../source/img/htmlacademy.sv" width="106" height="17" alt="to the gorgeous"></div>
+      <div class="sedona"><img src="../source/img/htmlacademy.sv" width="282" height="48" alt="sedona"></div>
     </section>
 
     <section class="advantages">
+
       <div class="advantages-header">
-        <h1 class="visually_hidden">Добро пожаловать в Седону</h1>
+        <h1 class="advantages-header__visually-hidden">Добро пожаловать в Седону</h1>
         <h2 class="advantages-header__title">седона небольшой городок в аризоне,<br> заслуживающий большего!</h2>
         <p class="advantages-header__description">рассмотрим 5 причин по которым седона круче, чем гранд каньон!</p>
       </div>
-      <div class="advantages__wrapper">
+        <div class="advantages__wrapper">
+
         <ul class="advantages__list">
 
-        <li class="advantages__item--wide">
-<!--   TODO      в прошлый раз я вынесла картинку в отдельный тег li-->
+        <li class="advantages__item-wide-blue">
+        <!--   TODO      в прошлый раз я вынесла картинку в отдельный тег li-->
           <div>
-            <img class="advantages__picture" src="" width="" height="" alt="">
+            <img class="advantages__picture" src="../source/img/htmlacademy.sv" width="520" height="260" alt="вид на террасу дома и горы">
           </div>
           <h3 class="advantages__title">настоящий городок</h3>
           <p class="advantages__text">№1</p>
@@ -54,57 +57,56 @@
 
           <li class="advantages__feature">
             <div>
-              <img class="advantages__icon" src="" width="" height="" alt="">
+              <img class="advantages__icon" src="../source/img/htmlacademy.sv" width="39" height="36" alt="иконка дома">
             </div>
             <h3 class="advantages__title">жильё</h3>
-            <p class="advantages__text">рекомендуем пожить</p>
+            <p class="advantages__text">рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
           </li>
 
           <li class="advantages__feature">
             <div>
-              <img class="advantages__icon" src="" width="" height="" alt="">
+              <img class="advantages__icon" src="../source/img/htmlacademy.sv" width="32" height="38" alt="иконка подарка">
             </div>
             <h3 class="advantages__title">сувениры</h3>
-            <p class="advantages__text">не только китайского</p>
+            <p class="advantages__text">не только китайского,но и местного производства!</p>
           </li>
 
           <li class="advantages__feature">
             <div>
-              <img class="advantages__icon" src="" width="" height="" alt="">
+              <img class="advantages__icon" src="../source/img/htmlacademy.sv" width="40" height="34" alt="иконка бургера">
             </div>
             <h3 class="advantages__title">еда</h3>
-            <p class="advantages__text">всегда заказывайте</p>
+            <p class="advantages__text">всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
           </li>
 
-          <li class="advantages__item--wide">
+          <li class="advantages__item-wide-blue">
             <div>
-              <img class="advantages__picture" src="" width="" height="" alt="">
+              <img class="advantages__picture" src="../source/img/htmlacademy.sv" width="520" height="260" alt="скалистый пейзаж">
             </div>
             <h3 class="advantages__title">там есть мост дьявола</h3>
             <p class="advantages__text">№2</p>
-            <p class="advantages__text">да, по нему можно пройти</p>
+            <p class="advantages__text">да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
 
-          <li>
+          <li class="advantages__item-grey">
             <h3 class="advantages__title">небольшая площадь</h3>
             <p class="advantages__text">№3</p>
-            <p class="advantages__text">все интересные места</p>
+            <p class="advantages__text">все интересные места находятся очень близко</p>
           </li>
 
-          <li>
+          <li class="advantages__item-grey">
             <h3 class="advantages__title">красивая дорога</h3>
             <p class="advantages__text">№4</p>
-            <p class="advantages__text">ехать в седону из лас-вегаса</p>
+            <p class="advantages__text">ехать в седону из лас-вегаса совсем не скучно!</p>
           </li>
 
-          <li>
+          <li class="advantages__item-grey">
             <h3 class="advantages__title">мало туристов</h3>
             <p class="advantages__text">№5</p>
-            <p class="advantages__text">большинство едет в гранд каньон</p>
+            <p class="advantages__text">большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </div>
-
     </section>
 
     <section class="form">
@@ -116,7 +118,8 @@
 
     <section class="map">
       <div class="map-wrapper">
-        <img src="" width="" height="" alt="Карта штата">
+        <h1 class="map__visually-hidden">карта штата</h1>
+        <img class="map__picture" src="../source/img/htmlacademy.sv" width="320" height="350" alt="Карта штата">
       </div>
     </section>
 
@@ -126,20 +129,23 @@
     <div class="page-footer__wrapper">
 
       <div class="page-footer__contacts">
-        <h2 class="visually_hidden">контакты</h2>
-        <a class="link contacts" href="#">#visitSedona</a>
+        <h2 class="page-footer__visually-hidden">контакты</h2>
+        <a class="page-footer__link-contacts" href="#">#visitSedona</a>
       </div>
 
       <div class="page-footer__social">
-        <ul class="footer_social">
+        <ul class="page-footer__social-list">
           <li>
-            <a class="social_button " href="#"><img src="img/iconsSocial/twitter.svg" alt="twitter "></a>
+            <a class="social-list__social-button" href="https://twitter.com/htmlacademy_ru?lang=ru">
+              <img src="../source/img/htmlacademy.sv" width="46" height="48" alt="twitter"></a>
           </li>
           <li>
-            <a class="social_button " href="#"><img src="img/iconsSocial/fb-icon.svg" alt="facebook "></a>
+            <a class="social-list__social-button" href="https://www.facebook.com/htmlacademy">
+              <img src="../source/img/htmlacademy.sv" width="47" height="48" alt="facebook"></a>
           </li>
           <li>
-            <a class="social_button " href="#"><img src="img/iconsSocial/youtube.svg" alt="youtube "></a>
+            <a class="social-list__social-button" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+              <img src="../source/img/htmlacademy.sv" width="46" height="48" alt="youtube"></a>
           </li>
         </ul>
       </div>
@@ -151,7 +157,5 @@
       </div>
     </div>
   </footer>
-
-
   </body>
 </html>
