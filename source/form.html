@@ -32,19 +32,80 @@
   </section>
 
   <section class="form">
-    <h1>Оставьте свой отзыв</h1>
-    <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <h1>оставьте свой отзыв</h1>
+    <p>помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
   <h1></h1>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <label for="name">имя</label>
-      <input type="text" name="name" value="Пётр">
-      <label for
+      <fieldset>
+        <legend>представьтесь:</legend>
+        <div>
+          <label for="name">имя:</label>
+          <input id="name" name="name" type="text" value="Пётр" placeholder="Имя">
+       </div>
+       <div>
+          <label for="surname">фамилия:</label>
+          <input id="surname" name="surname" type="text" value="Иванов" placeholder="Фамилия">
+       </div>
+       <div>
+          <label for="second-name">отчество:</label>
+          <input id="second-name" name="second-name" type="text" value="Александрович" placeholder="Отчество">
+       </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>контактная информация:</legend>
+        <div>
+          <label for="phone">контактный телефон:</label>
+          <input name="phone" id="phone" type="tel" placeholder="Введите телефон">
+        </div>
+        <div>
+          <label for="e-mail">электронная почта:</label>
+          <input id="e-mail" name="e-mail" type="email" placeholder="Введите e-mail">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>ваше общее впечатление:</legend>
+        <div class="">
+          <input class="" type="checkbox" name="positive" id="positive" checked>
+          <label for="positive">Скорее положительное</label>
+        </div>
+        <div class="">
+          <input class="" type="checkbox" name="positive" id="negative">
+          <label for="negative">Скорее отрицательное</label>
+        </div>
+        <div class="">
+          <input class="" type="checkbox" name="difficult" id="difficult">
+          <label for="difficult">Затрудняюсь ответить</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>посещённые достопримечательности</legend>
+        <div>
+          <input class="" type="checkbox" name="bridge" id="bridge" checked>
+          <label for="bridge">Мост Дьявола</label>
+        </div>
+        <div>
+          <input class="" type="checkbox" name="mount" id="mount" checked>
+          <label for="mount">Гора-Колокол</label>
+        </div>
+        <div>
+          <input class="" type="checkbox" name="slide" id="slide" checked>
+          <label for="slide">Слайд-парк</label>
+        </div>
+        <div>
+          <input class="" type="checkbox" name="red-rock" id="red-rock">
+          <label for="red-rock">Красные скалы</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Опишите свои эмоции</legend>
+        <textarea name="comment" id="comment-field" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+      </fieldset>
     </form>
-
-
   </section>
-
-
 
 </main>
 <footer class="page-footer">
