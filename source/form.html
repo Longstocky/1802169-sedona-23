@@ -31,78 +31,78 @@
     <img src="../source/img/htmlacademy.sv" width="901" height="389" alt="вид на скалы Седоны">
   </section>
 
-  <section class="form-review">
-    <h1 class="form-review__text">оставьте свой отзыв</h1>
+  <section class="form-review__header">
+    <h1 class="form-review__title">оставьте свой отзыв</h1>
     <p class="form-review__text">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-  <h1></h1>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="">
-        <legend>представьтесь:</legend>
-        <div>
-          <label for="name">имя:</label>
-          <input id="name" name="name" type="text" value="Пётр" placeholder="Имя">
+    <form class="form-review__form form" action="https://echo.htmlacademy.ru" method="post">
+
+      <fieldset class="form__intro intro">
+        <legend class="intro__title">представьтесь:</legend>
+        <div class="intro__wrapper">
+          <label class="intro__name" for="name">имя:</label>
+          <input class="intro__input" id="name" name="name" type="text" value="Пётр" placeholder="Имя">
        </div>
-       <div>
-          <label for="surname">фамилия:</label>
-          <input id="surname" name="surname" type="text" value="Иванов" placeholder="Фамилия">
+       <div class="intro__wrapper">
+          <label class="intro__name" for="surname">фамилия:</label>
+          <input class="intro__input" id="surname" name="surname" type="text" value="Иванов" placeholder="Фамилия">
        </div>
-       <div>
-          <label for="second-name">отчество:</label>
-          <input id="second-name" name="second-name" type="text" value="Александрович" placeholder="Отчество">
+       <div class="intro__wrapper">
+          <label class="intro__name" for="second-name">отчество:</label>
+          <input class="intro__input" id="second-name" name="second-name" type="text" value="Александрович" placeholder="Отчество">
        </div>
       </fieldset>
 
-      <fieldset>
-        <legend>контактная информация:</legend>
-        <div>
-          <label for="phone">контактный телефон:</label>
-          <input name="phone" id="phone" type="tel" placeholder="Введите телефон">
+      <fieldset class="form__contacts contacts">
+        <legend class="contacts__title">контактная информация:</legend>
+        <div class="contacts__wrapper">
+          <label class="contacts__name" for="phone">контактный телефон:</label>
+          <input class="contacts__input" name="phone" id="phone" type="tel" placeholder="Введите телефон">
         </div>
-        <div>
-          <label for="e-mail">электронная почта:</label>
-          <input id="e-mail" name="e-mail" type="email" placeholder="Введите e-mail">
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>ваше общее впечатление:</legend>
-        <div class="">
-          <input class="" type="checkbox" name="positive" id="positive" checked>
-          <label for="positive">Скорее положительное</label>
-        </div>
-        <div class="">
-          <input class="" type="checkbox" name="positive" id="negative">
-          <label for="negative">Скорее отрицательное</label>
-        </div>
-        <div class="">
-          <input class="" type="checkbox" name="difficult" id="difficult">
-          <label for="difficult">Затрудняюсь ответить</label>
+        <div class="contacts__wrapper">
+          <label class="contacts__name" for="e-mail">электронная почта:</label>
+          <input class="contacts__input" id="e-mail" name="e-mail" type="email" placeholder="Введите e-mail">
         </div>
       </fieldset>
 
-      <fieldset>
-        <legend>посещённые достопримечательности</legend>
-        <div>
-          <input class="" type="checkbox" name="bridge" id="bridge" checked>
+      <fieldset class="form__impress impress">
+        <legend class="impress__title">ваше общее впечатление:</legend>
+        <div class="impress__wrapper">
+          <input class="impress__input" type="checkbox" name="positive" id="positive" checked>
+          <label class="impress__label" for="positive">Скорее положительное</label>
+        </div>
+        <div class="impress__wrapper">
+          <input class="impress__input" type="checkbox" name="positive" id="negative">
+          <label class="impress__label" for="negative">Скорее отрицательное</label>
+        </div>
+        <div class="impress__wrapper">
+          <input class="impress__input" type="checkbox" name="difficult" id="difficult">
+          <label class="impress__label" for="difficult">Затрудняюсь ответить</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__attractions attractions">
+        <legend class="attractions__title">посещённые достопримечательности</legend>
+        <div class="attractions__wrapper">
+          <input class="attractions__input" type="checkbox" name="bridge" id="bridge" checked>
           <label for="bridge">Мост Дьявола</label>
         </div>
-        <div>
-          <input class="" type="checkbox" name="mount" id="mount" checked>
-          <label for="mount">Гора-Колокол</label>
+        <div class="attractions__wrapper">
+          <input class="attractions__input" type="checkbox" name="mount" id="mount" checked>
+          <label class="attractions__label" for="mount">Гора-Колокол</label>
         </div>
-        <div>
-          <input class="" type="checkbox" name="slide" id="slide" checked>
-          <label for="slide">Слайд-парк</label>
+        <div class="attractions__wrapper">
+          <input class="attractions__input" type="checkbox" name="slide" id="slide" checked>
+          <label class="attractions__label" for="slide">Слайд-парк</label>
         </div>
-        <div>
-          <input class="" type="checkbox" name="red-rock" id="red-rock">
-          <label for="red-rock">Красные скалы</label>
+        <div class="attractions__wrapper">
+          <input class="attractions__input" type="checkbox" name="red-rock" id="red-rock">
+          <label class="attractions__label" for="red-rock">Красные скалы</label>
         </div>
       </fieldset>
 
-      <fieldset>
-        <legend>Опишите свои эмоции</legend>
-        <textarea name="comment" id="comment-field" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+      <fieldset class="form__recall recall">
+        <legend class="recall__title">Опишите свои эмоции</legend>
+        <textarea class="recall__textarea" name="comment" id="comment-field" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
     </form>
   </section>
