@@ -1,0 +1,28 @@
+.page__body {
+  width: 320px;
+  min-height: 100%;
+  margin: 0;
+  text-transform: uppercase;
+  background-color: @white--main;
+  font-family: "PTSans";  // TODO: Прописать путь до шрифтов.
+}
+
+// TODO global а куда поставить global?
+
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

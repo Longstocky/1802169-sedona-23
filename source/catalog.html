@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
 
 <header class="header">
   <a class="header__logo" href="">
-    <img src="../source/img/logotyle-mobile.svg" width="101" height="84" alt="logo">
+    <img src="../img/logotyle-mobile.svg" width="101" height="84" alt="logo">
   </a>
   <nav class="navigation">
     <button class="navigation__toggle" type="button"></button>
@@ -26,8 +27,8 @@
 
 <main class="main">
   <section class="slogan">
-    <h1 class="slogan visually-hidden">Седона - город заслуживающий большего.</h1>
-    <img src="../source/img/back-desktop.jpg" width="902" height="214" alt="вид на скалы Седоны">
+    <h1 class="visually-hidden">Седона - город заслуживающий большего.</h1>
+    <img src="..img/back-desktop.jpg" width="902" height="214" alt="вид на скалы Седоны">
   </section>
 
   <section class="gallery">
@@ -36,35 +37,35 @@
       <p class="gallery__text">не можете решиться на путешествие<br>из-за курса? фотографии помогут вам<br>забыть о политике и экономике</p>
       <ul class="gallery__list">
         <li class="gallery__item item">
-          <img class="item__picture-1" src="../source/img/catalog/photo-1-mobile.jpg" width="280" height="280" alt="дорога уходящая вдаль">
+          <img class="item__picture--1" src="img/catalog/photo-1-mobile.jpg" width="280" height="280" alt="дорога уходящая вдаль">
           <h3 class="item__name">неродные просторы</h3>
           <p class="item__autor">Автор Фото:Борис</p>
-          <!--    TODO      добавить иконку лайк-->
+          <button class="item__like" type="button">1350</button>
         </li>
         <li class="gallery__item item">
-          <img class="item__picture-2" src="../source/img/catalog/photo-2-mobile.jpg" width="280" height="280" alt="фото кактуса на фоне скал">
+          <img class="item__picture--2" src="img/catalog/photo-2-mobile.jpg" width="280" height="280" alt="фото кактуса на фоне скал">
           <h3 class="item__name">местная растительность</h3>
           <p class="item__autor">Автор Фото:Сергей</p>
-          <!--    TODO      добавить иконку лайк-->
+          <button class="item__like" type="button">143</button>
         </li>
         <li class="gallery__item item">
-          <img class="item__picture-3" src="../source/img/catalog/photo-3-mobile.jpg" width="280" height="280" alt="серпантин среди леса">
+          <img class="item__picture--3" src="img/catalog/photo-3-mobile.jpg" width="280" height="280" alt="серпантин среди леса">
           <h3 class="item__name">дорога на север</h3>
           <p class="item__autor">Автор Фото:Петр</p>
-          <!--    TODO      добавить иконку лайк-->
+          <button class="item__like" type="button">96</button>
         </li>
-        <li class="gallery__item">
-          <img class="item__picture-4" src="../source/img/catalog/photo-4-desktop.jpg" width="280" height="280" alt="фото скалы дьявола">
+        <li class="gallery__item item">
+          <img class="item__picture--4" src="img/catalog/photo-4-desktop.jpg" width="280" height="280" alt="фото скалы дьявола">
           <h3 class="item__name">мост дьявола</h3>
           <p class="item__autor">Автор Фото:Антон</p>
-          <!--    TODO      добавить иконку лайк-->
+          <button class="item__like" type="button">254</button>
         </li>
       </ul>
 </div>
 <div class="gallery__wrapper video">
     <h1 class="video__title">всё ещё сомневаетесь?</h1>
     <p class="video__text">смотрите видео презентацию и<br> скорее за билетами,<br> пока они не<br>подорожали в очередной раз!</p>
-  <img class="video__movie" src="..//source/img/catalog/video-mobile.jpg" alt="некое видео">
+  <img class="video__movie" src="img/catalog/video-mobile.jpg" alt="некое видео">
 </div>
   </section>
 
@@ -74,7 +75,7 @@
   <div class="footer__wrapper">
 
     <div class="footer__contacts contacts">
-      <h2 class="contacts visually-hidden">контакты</h2>
+      <h2 class="visually-hidden">контакты</h2>
       <a class="contacts__link" href="#">#visitSedona</a>
     </div>
 
@@ -82,25 +83,24 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru?lang=ru">
-            <img class="social__icon" src="../source/img/icon-twitter.svg" width="46" height="48" alt="twitter"></a>
+            <img class="social__icon" src="img/icon-twitter.svg" width="46" height="48" alt="twitter"></a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-            <img class="social__icon" src="../source/img/icon-facebook.svg" width="47" height="48" alt="facebook"></a>
+            <img class="social__icon" src="img/icon-facebook.svg" width="47" height="48" alt="facebook"></a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
-            <img class="social__icon" src="../source/img/icon-youtube.svg" width="46" height="48" alt="youtube"></a>
+            <img class="social__icon" src="img/icon-youtube.svg" width="46" height="48" alt="youtube"></a>
         </li>
       </ul>
     </div>
     <div class="footer__copyright copyright">
       <b class="copyright__text">разработано</b>
       <a class="copyright__link" href="https://htmlacademy.ru">
-        <img class="copyright__icon" src="../source/img/htmlacademy.svg" width="26" height="34" alt="Логотип html академии"></a>
+        <img class="copyright__icon" src="img/htmlacademy.svg" width="26" height="34" alt="Логотип html академии"></a>
     </div>
   </div>
 </footer>
 </body>
 </html>
-
